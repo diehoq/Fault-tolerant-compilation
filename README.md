@@ -10,5 +10,7 @@ The current milestone implements the algebraic foundations:
 - the Steane code stabilizers and logical operators,
 - explicit syndrome computation,
 - a transparent lookup-table decoder for all single-qubit `X`, `Y`, and `Z` errors.
+- independent Pauli memory-noise channels,
+- real Stim circuits for level-0 physical memory checks.
 
-Later phases will add real Stim circuits, level-0 physical memory simulation, level-1 encoded memory cycles, and recursive higher-level analysis.
+Later phases will add level-1 encoded memory cycles and recursive higher-level analysis.
