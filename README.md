@@ -12,5 +12,6 @@ The current milestone implements the algebraic foundations:
 - a transparent lookup-table decoder for all single-qubit `X`, `Y`, and `Z` errors.
 - independent Pauli memory-noise channels,
 - real Stim circuits for level-0 physical memory checks.
+- ideal level-1 Steane memory sampling with logical `X`/`Z` failure classification.
 
-Later phases will add level-1 encoded memory cycles and recursive higher-level analysis.
+Later phases will add noisy syndrome-extraction circuits and recursive higher-level analysis.
