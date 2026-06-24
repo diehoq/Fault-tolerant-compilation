@@ -15,6 +15,22 @@ os.environ.setdefault("MPLCONFIGDIR", str(REPO_ROOT / "results" / ".matplotlib")
 
 from concatenated_steane.analysis import plot_level_scan, run_level_scan, write_level_scan_csv
 
+DEFAULT_PHYSICAL_ERROR_PROBABILITIES = [
+    0.001,
+    0.0015,
+    0.0022,
+    0.0032,
+    0.0046,
+    0.0068,
+    0.01,
+    0.015,
+    0.022,
+    0.032,
+    0.046,
+    0.068,
+    0.1,
+]
+
 
 def main() -> None:
     """Parse arguments, run the scan, and write CSV and plot outputs."""
@@ -38,7 +54,7 @@ def main() -> None:
         "--probabilities",
         type=float,
         nargs="+",
-        default=[0.001, 0.003, 0.01, 0.03, 0.1],
+        default=DEFAULT_PHYSICAL_ERROR_PROBABILITIES,
         help="Physical depolarizing error probabilities to scan.",
     )
     parser.add_argument(
