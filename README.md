@@ -15,3 +15,11 @@ The current milestone implements the algebraic foundations:
 - ideal level-1 Steane memory sampling with logical `X`/`Z` failure classification.
 
 Later phases will add noisy syndrome-extraction circuits and recursive higher-level analysis.
+
+Run the first suppression scan with:
+
+```bash
+python scripts/run_level_scan.py
+```
+
+This writes `results/level_scan.csv` and `results/level_scan.png`.
