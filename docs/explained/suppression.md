@@ -12,3 +12,10 @@ For each physical depolarizing error probability, it samples:
 The helper writes the scan to CSV and makes a log-log plot. Zero Monte Carlo
 estimates are plotted at a tiny positive floor so they can appear on logarithmic
 axes; the CSV keeps the real zero values.
+
+The module also estimates the level-1 pseudo-threshold. This is the physical
+error probability where the sampled level-1 logical failure rate crosses the
+corresponding level-0 physical failure rate. X and Z components are estimated
+separately.
+
+The standard-error columns use the binomial estimate `sqrt(p * (1 - p) / shots)`.

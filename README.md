@@ -23,3 +23,5 @@ python scripts/run_level_scan.py
 ```
 
 This writes `results/level_scan.csv` and `results/level_scan.png`.
+It also writes `results/level1_pseudo_thresholds.csv`, which estimates where
+the level-1 logical failure rate crosses the level-0 physical failure rate.

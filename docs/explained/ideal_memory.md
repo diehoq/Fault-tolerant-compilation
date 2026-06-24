@@ -13,3 +13,8 @@ The classification uses commutation with the logical operators:
 
 This module still uses ideal error correction. It does not yet include a noisy
 syndrome-extraction circuit or ancilla verification.
+
+Here, "ideal" means the syndrome bits and recovery operation are computed
+perfectly from the physical data error. The memory faults are noisy, but the
+error-correction machinery itself cannot introduce extra faults, mismeasure a
+syndrome, or fail because of a bad ancilla.
